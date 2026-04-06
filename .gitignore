@@ -1,0 +1,27 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment / secrets
+.env
+
+# Mac
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Prefect
+.prefect/
+
+# dbt generated artifacts
+ev_dbt/target/
+ev_dbt/logs/
+ev_dbt/dbt_packages/
+
+# Local dbt profile
+dbt/profiles.yml

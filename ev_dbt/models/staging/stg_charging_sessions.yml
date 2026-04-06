@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_charging_sessions
+    columns:
+      - name: acn_id
+        tests:
+          - unique
+          - not_null
+
+      - name: session_id
+        tests:
+          - not_null
+
+      - name: station_id
+        tests:
+          - not_null
+
+      - name: site_id
+        tests:
+          - not_null
+
+      - name: connection_time
+        tests:
+          - not_null
+
+      - name: kwh_delivered
+        tests:
+          - not_null
